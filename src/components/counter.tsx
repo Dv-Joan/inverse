@@ -14,12 +14,12 @@ export const Counter = component$(() => {
     }),
   });
   return (
-    <div class="flex lg:flex-row flex-col gap-5 justify-center m-10">
-      <section class="max-w-sm p-5 rounded-lg shadow-md dark:bg-[#181f2c]">
+    <div class="flex lg:flex-row flex-col gap-10 justify-center m-10">
+      <section class="max-w-sm p-5 space-y-5   rounded-lg shadow-md dark:bg-[#181f2c]">
         <h3 class=" text-xl lg:text-2xl font-bold text-gray-900 dark:text-white">
           useSignal
         </h3>
-        <p class="mb-5  text-gray-700 dark:text-gray-400">
+        <p class="text-gray-700 dark:text-gray-400">
           Counter increment/decrement classic example with useSignal qwik
           module.
         </p>
@@ -38,11 +38,11 @@ export const Counter = component$(() => {
           Decrement
         </button>
       </section>
-      <section class="max-w-sm p-5 rounded-lg shadow-md dark:bg-[#181f2c]">
+      <section class="max-w-sm p-5 space-y-5 rounded-lg shadow-md dark:bg-[#181f2c]">
         <h3 class=" text-xl lg:text-2xl font-bold text-gray-900 dark:text-white">
           useStore
         </h3>
-        <p class="mb-5  font-normal text-gray-700 dark:text-gray-400">
+        <p class="font-normal text-gray-700 dark:text-gray-400">
           Counter increment/decrement classic example with useStore qwik module.
         </p>
 
@@ -62,11 +62,11 @@ export const Counter = component$(() => {
           Decrement
         </button>
       </section>
-      <section class="max-w-sm p-5 rounded-lg shadow-md dark:bg-[#181f2c]">
+      <section class="max-w-sm p-5 space-y-5 rounded-lg shadow-md dark:bg-[#181f2c]">
         <h3 class=" text-xl lg:text-2xl font-bold text-gray-900 dark:text-white">
           useStore | Functions
         </h3>
-        <p class="mb-5 font-normal text-gray-700 dark:text-gray-400">
+        <p class="font-normal text-gray-700 dark:text-gray-400">
           Counter increment/decrement classic example with useStore qwik modile
           and including inner function .
         </p>

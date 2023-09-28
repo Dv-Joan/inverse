@@ -1,40 +1,37 @@
 import { component$ } from "@builder.io/qwik";
+import { LuShield, LuLogOut } from "@qwikest/icons/lucide";
 
 export const NavBar = component$(() => {
   return (
     <div class="flex justify-center lg:justify-between lg:px-24 border-b-[1px] border-dotted border-neutral-200 py-5">
-      <div class="flex gap-1 items-center">
-        <a href="#" class="logo">
-          <img
-            src="https://img.icons8.com/?size=1x&id=42710&format=png"
-            class="drop-shadow-sm"
-            alt="Avatar"
-            width={50}
-            height={50}
-          />
-        </a>
+      <a href="#" class="flex gap-1 group items-center">
+        <LuShield class="w-12 h-12 rotate-180 text-white group-hover:fill-orange-500 " />
         <div class="flex flex-col">
-          <h2 class="lg:text-3xl text-2xl font-bold">Inverse</h2>
-          <h5 class="text-slate-500 text-[12px] pl-0.5">
-            Qwik side components
+          <h2 class="lg:text-3xl  text-2xl font-bold">Inverse</h2>
+          <h5 class="text-slate-400 text-sm pl-0.5">
+            Qwik essentials components
           </h5>
         </div>
-      </div>
+      </a>
 
-      <div class="flex items-center gap-5 font-semibol invisible lg:visible ">
+      <div class="flex items-center gap-5 font-semibold invisible lg:visible ">
         <div class="flex gap-2 items-center">
           <img
-            src="https://randomuser.me/api/portraits/men/97.jpg"
+            src="https://randomuser.me/api/portraits/men/95.jpg"
             class="rounded-full"
             alt="Avatar"
             width={30}
             height={30}
           />
 
-          <span class="hover:text-neutral-500 cursor-pointer">John Doe</span>
+          <span class="hover:opacity-75 cursor-pointer">Jordan Barret</span>
         </div>
-        <a href="#" class="hover:text-neutral-500 cursor-pointer">
+        <a
+          href="#"
+          class="hover:opacity-75 flex items-center gap-2 cursor-pointer"
+        >
           Logout
+          <LuLogOut class="w-3 h-3" />
         </a>
       </div>
     </div>

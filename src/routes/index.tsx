@@ -6,14 +6,7 @@ import { NavBar } from "~/components/shared/navbar";
 export default component$(() => {
   return (
     <>
-      <div role="presentation" class="ellipsis"></div>
-      <div role="presentation" class="ellipsis ellipsis-purple"></div>
-
-      <div class="container container-center container-spacing-xl">
-        <h3>
-          Puedes ver el <span class="highlight">contador</span>
-          <br /> aquí
-        </h3>
+      <div>
         <NavBar />
         <Counter />
       </div>
