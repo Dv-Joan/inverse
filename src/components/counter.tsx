@@ -13,6 +13,7 @@ export const Counter = component$(() => {
       this.contador--;
     }),
   });
+
   return (
     <div class="flex lg:flex-row flex-col gap-10 justify-center m-10">
       <section class="max-w-sm p-5 space-y-5   rounded-lg shadow-md dark:bg-[#181f2c]">
